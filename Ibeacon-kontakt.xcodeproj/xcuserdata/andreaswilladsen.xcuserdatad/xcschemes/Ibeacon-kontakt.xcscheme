@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A21286F4197FF0EA003BF8A5"
+               BuildableName = "Ibeacon-kontakt.app"
+               BlueprintName = "Ibeacon-kontakt"
+               ReferencedContainer = "container:Ibeacon-kontakt.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A21286F4197FF0EA003BF8A5"
+            BuildableName = "Ibeacon-kontakt.app"
+            BlueprintName = "Ibeacon-kontakt"
+            ReferencedContainer = "container:Ibeacon-kontakt.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>

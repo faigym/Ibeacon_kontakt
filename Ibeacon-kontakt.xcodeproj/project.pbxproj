@@ -21,6 +21,11 @@
 		A212871A197FF0EB003BF8A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21286FC197FF0EA003BF8A5 /* UIKit.framework */; };
 		A2128722197FF0EB003BF8A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2128720197FF0EB003BF8A5 /* InfoPlist.strings */; };
 		A2128724197FF0EB003BF8A5 /* kontak2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2128723197FF0EB003BF8A5 /* kontak2Tests.m */; };
+		A212874B197FF178003BF8A5 /* libkontakt-ios-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A212872D197FF0F9003BF8A5 /* libkontakt-ios-sdk.a */; };
+		A212874D197FF264003BF8A5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A212874C197FF264003BF8A5 /* CoreLocation.framework */; };
+		A212874F197FF26A003BF8A5 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A212874E197FF26A003BF8A5 /* CoreBluetooth.framework */; };
+		A2128751197FF3C7003BF8A5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2128750197FF3C7003BF8A5 /* CoreData.framework */; };
+		A25968A11981292B00A2BD77 /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A25968A01981292B00A2BD77 /* BeaconManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,25 +39,57 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A21286F5197FF0EA003BF8A5 /* kontak2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kontak2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21286F5197FF0EA003BF8A5 /* Ibeacon-kontakt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ibeacon-kontakt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21286F8197FF0EA003BF8A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A21286FA197FF0EA003BF8A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A21286FC197FF0EA003BF8A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A2128700197FF0EA003BF8A5 /* kontak2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kontak2-Info.plist"; sourceTree = "<group>"; };
+		A2128700197FF0EA003BF8A5 /* Ibeacon-kontakt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ibeacon-kontakt-Info.plist"; sourceTree = "<group>"; };
 		A2128702197FF0EA003BF8A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A2128704197FF0EA003BF8A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A2128706197FF0EA003BF8A5 /* kontak2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kontak2-Prefix.pch"; sourceTree = "<group>"; };
+		A2128706197FF0EA003BF8A5 /* Ibeacon-kontakt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ibeacon-kontakt-Prefix.pch"; sourceTree = "<group>"; };
 		A2128707197FF0EA003BF8A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2128708197FF0EA003BF8A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A212870B197FF0EA003BF8A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A212870D197FF0EA003BF8A5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A212870E197FF0EA003BF8A5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A2128710197FF0EA003BF8A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A2128716197FF0EA003BF8A5 /* kontak2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kontak2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2128716197FF0EA003BF8A5 /* Ibeacon-kontaktTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ibeacon-kontaktTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2128717197FF0EA003BF8A5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A212871F197FF0EB003BF8A5 /* kontak2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kontak2Tests-Info.plist"; sourceTree = "<group>"; };
+		A212871F197FF0EB003BF8A5 /* Ibeacon-kontaktTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ibeacon-kontaktTests-Info.plist"; sourceTree = "<group>"; };
 		A2128721197FF0EB003BF8A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A2128723197FF0EB003BF8A5 /* kontak2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kontak2Tests.m; sourceTree = "<group>"; };
+		A212872D197FF0F9003BF8A5 /* libkontakt-ios-sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libkontakt-ios-sdk.a"; sourceTree = "<group>"; };
+		A2128730197FF0F9003BF8A5 /* KontaktSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KontaktSDK.h; sourceTree = "<group>"; };
+		A2128731197FF0F9003BF8A5 /* KTKAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKAction.h; sourceTree = "<group>"; };
+		A2128732197FF0F9003BF8A5 /* KTKActionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKActionManager.h; sourceTree = "<group>"; };
+		A2128733197FF0F9003BF8A5 /* KTKBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKBeacon.h; sourceTree = "<group>"; };
+		A2128734197FF0F9003BF8A5 /* KTKBeaconDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKBeaconDevice.h; sourceTree = "<group>"; };
+		A2128735197FF0F9003BF8A5 /* KTKBeaconDeviceV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKBeaconDeviceV2.h; sourceTree = "<group>"; };
+		A2128736197FF0F9003BF8A5 /* KTKBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKBeaconManager.h; sourceTree = "<group>"; };
+		A2128737197FF0F9003BF8A5 /* KTKBluetoothDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKBluetoothDevice.h; sourceTree = "<group>"; };
+		A2128738197FF0F9003BF8A5 /* KTKBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKBluetoothManager.h; sourceTree = "<group>"; };
+		A2128739197FF0F9003BF8A5 /* KTKCharacteristicDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKCharacteristicDescriptor.h; sourceTree = "<group>"; };
+		A212873A197FF0F9003BF8A5 /* KTKClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKClient.h; sourceTree = "<group>"; };
+		A212873B197FF0F9003BF8A5 /* KTKConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKConverter.h; sourceTree = "<group>"; };
+		A212873C197FF0F9003BF8A5 /* KTKDataTransferObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKDataTransferObject.h; sourceTree = "<group>"; };
+		A212873D197FF0F9003BF8A5 /* KTKDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKDescriptor.h; sourceTree = "<group>"; };
+		A212873E197FF0F9003BF8A5 /* KTKError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKError.h; sourceTree = "<group>"; };
+		A212873F197FF0F9003BF8A5 /* KTKFirmware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKFirmware.h; sourceTree = "<group>"; };
+		A2128740197FF0F9003BF8A5 /* KTKHexConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKHexConverter.h; sourceTree = "<group>"; };
+		A2128741197FF0F9003BF8A5 /* KTKLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKLocationManager.h; sourceTree = "<group>"; };
+		A2128742197FF0F9003BF8A5 /* KTKNumberConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKNumberConverter.h; sourceTree = "<group>"; };
+		A2128743197FF0F9003BF8A5 /* KTKNumberDiscreteConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKNumberDiscreteConverter.h; sourceTree = "<group>"; };
+		A2128744197FF0F9003BF8A5 /* KTKNumberLinearConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKNumberLinearConverter.h; sourceTree = "<group>"; };
+		A2128745197FF0F9003BF8A5 /* KTKRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKRegion.h; sourceTree = "<group>"; };
+		A2128746197FF0F9003BF8A5 /* KTKServiceDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKServiceDescriptor.h; sourceTree = "<group>"; };
+		A2128747197FF0F9003BF8A5 /* KTKStringConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKStringConverter.h; sourceTree = "<group>"; };
+		A2128748197FF0F9003BF8A5 /* KTKUUIDConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKUUIDConverter.h; sourceTree = "<group>"; };
+		A2128749197FF0F9003BF8A5 /* KTKVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTKVenue.h; sourceTree = "<group>"; };
+		A212874C197FF264003BF8A5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A212874E197FF26A003BF8A5 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A2128750197FF3C7003BF8A5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A259689F1981292B00A2BD77 /* BeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
+		A25968A01981292B00A2BD77 /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +97,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2128751197FF3C7003BF8A5 /* CoreData.framework in Frameworks */,
+				A212874F197FF26A003BF8A5 /* CoreBluetooth.framework in Frameworks */,
+				A212874D197FF264003BF8A5 /* CoreLocation.framework in Frameworks */,
+				A212874B197FF178003BF8A5 /* libkontakt-ios-sdk.a in Frameworks */,
 				A21286FB197FF0EA003BF8A5 /* CoreGraphics.framework in Frameworks */,
 				A21286FD197FF0EA003BF8A5 /* UIKit.framework in Frameworks */,
 				A21286F9197FF0EA003BF8A5 /* Foundation.framework in Frameworks */,
@@ -82,6 +123,8 @@
 		A21286EC197FF0EA003BF8A5 = {
 			isa = PBXGroup;
 			children = (
+				A212872D197FF0F9003BF8A5 /* libkontakt-ios-sdk.a */,
+				A212872E197FF0F9003BF8A5 /* include */,
 				A21286FE197FF0EA003BF8A5 /* kontak2 */,
 				A212871D197FF0EB003BF8A5 /* kontak2Tests */,
 				A21286F7197FF0EA003BF8A5 /* Frameworks */,
@@ -92,8 +135,8 @@
 		A21286F6197FF0EA003BF8A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A21286F5197FF0EA003BF8A5 /* kontak2.app */,
-				A2128716197FF0EA003BF8A5 /* kontak2Tests.xctest */,
+				A21286F5197FF0EA003BF8A5 /* Ibeacon-kontakt.app */,
+				A2128716197FF0EA003BF8A5 /* Ibeacon-kontaktTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +144,9 @@
 		A21286F7197FF0EA003BF8A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2128750197FF3C7003BF8A5 /* CoreData.framework */,
+				A212874E197FF26A003BF8A5 /* CoreBluetooth.framework */,
+				A212874C197FF264003BF8A5 /* CoreLocation.framework */,
 				A21286F8197FF0EA003BF8A5 /* Foundation.framework */,
 				A21286FA197FF0EA003BF8A5 /* CoreGraphics.framework */,
 				A21286FC197FF0EA003BF8A5 /* UIKit.framework */,
@@ -112,6 +158,8 @@
 		A21286FE197FF0EA003BF8A5 /* kontak2 */ = {
 			isa = PBXGroup;
 			children = (
+				A259689F1981292B00A2BD77 /* BeaconManager.h */,
+				A25968A01981292B00A2BD77 /* BeaconManager.m */,
 				A2128707197FF0EA003BF8A5 /* AppDelegate.h */,
 				A2128708197FF0EA003BF8A5 /* AppDelegate.m */,
 				A212870A197FF0EA003BF8A5 /* Main.storyboard */,
@@ -126,10 +174,10 @@
 		A21286FF197FF0EA003BF8A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A2128700197FF0EA003BF8A5 /* kontak2-Info.plist */,
+				A2128700197FF0EA003BF8A5 /* Ibeacon-kontakt-Info.plist */,
 				A2128701197FF0EA003BF8A5 /* InfoPlist.strings */,
 				A2128704197FF0EA003BF8A5 /* main.m */,
-				A2128706197FF0EA003BF8A5 /* kontak2-Prefix.pch */,
+				A2128706197FF0EA003BF8A5 /* Ibeacon-kontakt-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -146,18 +194,59 @@
 		A212871E197FF0EB003BF8A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A212871F197FF0EB003BF8A5 /* kontak2Tests-Info.plist */,
+				A212871F197FF0EB003BF8A5 /* Ibeacon-kontaktTests-Info.plist */,
 				A2128720197FF0EB003BF8A5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A212872E197FF0F9003BF8A5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A212872F197FF0F9003BF8A5 /* kontakt-ios-sdk */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A212872F197FF0F9003BF8A5 /* kontakt-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				A2128730197FF0F9003BF8A5 /* KontaktSDK.h */,
+				A2128731197FF0F9003BF8A5 /* KTKAction.h */,
+				A2128732197FF0F9003BF8A5 /* KTKActionManager.h */,
+				A2128733197FF0F9003BF8A5 /* KTKBeacon.h */,
+				A2128734197FF0F9003BF8A5 /* KTKBeaconDevice.h */,
+				A2128735197FF0F9003BF8A5 /* KTKBeaconDeviceV2.h */,
+				A2128736197FF0F9003BF8A5 /* KTKBeaconManager.h */,
+				A2128737197FF0F9003BF8A5 /* KTKBluetoothDevice.h */,
+				A2128738197FF0F9003BF8A5 /* KTKBluetoothManager.h */,
+				A2128739197FF0F9003BF8A5 /* KTKCharacteristicDescriptor.h */,
+				A212873A197FF0F9003BF8A5 /* KTKClient.h */,
+				A212873B197FF0F9003BF8A5 /* KTKConverter.h */,
+				A212873C197FF0F9003BF8A5 /* KTKDataTransferObject.h */,
+				A212873D197FF0F9003BF8A5 /* KTKDescriptor.h */,
+				A212873E197FF0F9003BF8A5 /* KTKError.h */,
+				A212873F197FF0F9003BF8A5 /* KTKFirmware.h */,
+				A2128740197FF0F9003BF8A5 /* KTKHexConverter.h */,
+				A2128741197FF0F9003BF8A5 /* KTKLocationManager.h */,
+				A2128742197FF0F9003BF8A5 /* KTKNumberConverter.h */,
+				A2128743197FF0F9003BF8A5 /* KTKNumberDiscreteConverter.h */,
+				A2128744197FF0F9003BF8A5 /* KTKNumberLinearConverter.h */,
+				A2128745197FF0F9003BF8A5 /* KTKRegion.h */,
+				A2128746197FF0F9003BF8A5 /* KTKServiceDescriptor.h */,
+				A2128747197FF0F9003BF8A5 /* KTKStringConverter.h */,
+				A2128748197FF0F9003BF8A5 /* KTKUUIDConverter.h */,
+				A2128749197FF0F9003BF8A5 /* KTKVenue.h */,
+			);
+			path = "kontakt-ios-sdk";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A21286F4197FF0EA003BF8A5 /* kontak2 */ = {
+		A21286F4197FF0EA003BF8A5 /* Ibeacon-kontakt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2128727197FF0EB003BF8A5 /* Build configuration list for PBXNativeTarget "kontak2" */;
+			buildConfigurationList = A2128727197FF0EB003BF8A5 /* Build configuration list for PBXNativeTarget "Ibeacon-kontakt" */;
 			buildPhases = (
 				A21286F1197FF0EA003BF8A5 /* Sources */,
 				A21286F2197FF0EA003BF8A5 /* Frameworks */,
@@ -167,14 +256,14 @@
 			);
 			dependencies = (
 			);
-			name = kontak2;
+			name = "Ibeacon-kontakt";
 			productName = kontak2;
-			productReference = A21286F5197FF0EA003BF8A5 /* kontak2.app */;
+			productReference = A21286F5197FF0EA003BF8A5 /* Ibeacon-kontakt.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A2128715197FF0EA003BF8A5 /* kontak2Tests */ = {
+		A2128715197FF0EA003BF8A5 /* Ibeacon-kontaktTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A212872A197FF0EB003BF8A5 /* Build configuration list for PBXNativeTarget "kontak2Tests" */;
+			buildConfigurationList = A212872A197FF0EB003BF8A5 /* Build configuration list for PBXNativeTarget "Ibeacon-kontaktTests" */;
 			buildPhases = (
 				A2128712197FF0EA003BF8A5 /* Sources */,
 				A2128713197FF0EA003BF8A5 /* Frameworks */,
@@ -185,9 +274,9 @@
 			dependencies = (
 				A212871C197FF0EB003BF8A5 /* PBXTargetDependency */,
 			);
-			name = kontak2Tests;
+			name = "Ibeacon-kontaktTests";
 			productName = kontak2Tests;
-			productReference = A2128716197FF0EA003BF8A5 /* kontak2Tests.xctest */;
+			productReference = A2128716197FF0EA003BF8A5 /* Ibeacon-kontaktTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -199,12 +288,20 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = com.appcoda;
 				TargetAttributes = {
+					A21286F4197FF0EA003BF8A5 = {
+						DevelopmentTeam = 4J34TJWAUB;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					A2128715197FF0EA003BF8A5 = {
 						TestTargetID = A21286F4197FF0EA003BF8A5;
 					};
 				};
 			};
-			buildConfigurationList = A21286F0197FF0EA003BF8A5 /* Build configuration list for PBXProject "kontak2" */;
+			buildConfigurationList = A21286F0197FF0EA003BF8A5 /* Build configuration list for PBXProject "Ibeacon-kontakt" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -217,8 +314,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A21286F4197FF0EA003BF8A5 /* kontak2 */,
-				A2128715197FF0EA003BF8A5 /* kontak2Tests */,
+				A21286F4197FF0EA003BF8A5 /* Ibeacon-kontakt */,
+				A2128715197FF0EA003BF8A5 /* Ibeacon-kontaktTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A212870F197FF0EA003BF8A5 /* ViewController.m in Sources */,
+				A25968A11981292B00A2BD77 /* BeaconManager.m in Sources */,
 				A2128709197FF0EA003BF8A5 /* AppDelegate.m in Sources */,
 				A2128705197FF0EA003BF8A5 /* main.m in Sources */,
 			);
@@ -268,7 +366,7 @@
 /* Begin PBXTargetDependency section */
 		A212871C197FF0EB003BF8A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A21286F4197FF0EA003BF8A5 /* kontak2 */;
+			target = A21286F4197FF0EA003BF8A5 /* Ibeacon-kontakt */;
 			targetProxy = A212871B197FF0EB003BF8A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -376,10 +474,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "kontak2/kontak2-Prefix.pch";
-				INFOPLIST_FILE = "kontak2/kontak2-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "kontak2/Ibeacon-kontakt-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"include/**",
+					"/include/$(kontakt-ios-sdk)",
+				);
+				INFOPLIST_FILE = "kontak2/Ibeacon-kontakt-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "Ibeacon-kontakt";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,10 +504,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "kontak2/kontak2-Prefix.pch";
-				INFOPLIST_FILE = "kontak2/kontak2-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "kontak2/Ibeacon-kontakt-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"include/**",
+					"/include/$(kontakt-ios-sdk)",
+				);
+				INFOPLIST_FILE = "kontak2/Ibeacon-kontakt-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "Ibeacon-kontakt";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -412,8 +544,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "kontak2Tests/kontak2Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "kontak2Tests/Ibeacon-kontaktTests-Info.plist";
+				PRODUCT_NAME = "Ibeacon-kontaktTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -430,8 +562,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kontak2/kontak2-Prefix.pch";
-				INFOPLIST_FILE = "kontak2Tests/kontak2Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "kontak2Tests/Ibeacon-kontaktTests-Info.plist";
+				PRODUCT_NAME = "Ibeacon-kontaktTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -440,7 +572,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A21286F0197FF0EA003BF8A5 /* Build configuration list for PBXProject "kontak2" */ = {
+		A21286F0197FF0EA003BF8A5 /* Build configuration list for PBXProject "Ibeacon-kontakt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2128725197FF0EB003BF8A5 /* Debug */,
@@ -449,21 +581,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2128727197FF0EB003BF8A5 /* Build configuration list for PBXNativeTarget "kontak2" */ = {
+		A2128727197FF0EB003BF8A5 /* Build configuration list for PBXNativeTarget "Ibeacon-kontakt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2128728197FF0EB003BF8A5 /* Debug */,
 				A2128729197FF0EB003BF8A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		A212872A197FF0EB003BF8A5 /* Build configuration list for PBXNativeTarget "kontak2Tests" */ = {
+		A212872A197FF0EB003BF8A5 /* Build configuration list for PBXNativeTarget "Ibeacon-kontaktTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A212872B197FF0EB003BF8A5 /* Debug */,
 				A212872C197FF0EB003BF8A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
